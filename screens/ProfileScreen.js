@@ -3,7 +3,7 @@ import { StyleSheet, Alert, Text, View } from 'react-native'
 import DailyCard from '../components/cards/DailyCard'
 import CardImage from '../components/cards/CardImage'
 
-export default class HomeScreen extends React.Component {
+export default class ProfileScreen extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -14,6 +14,7 @@ export default class HomeScreen extends React.Component {
     componentDidMount() {
 
     }
+    
     handleClick = () => {
         console.log('dsadsdsdas')
         Alert.alert(
