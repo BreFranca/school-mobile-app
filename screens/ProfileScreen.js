@@ -1,7 +1,6 @@
 import React from 'react'
 import { StyleSheet, Alert, Text, View } from 'react-native'
-import DailyCard from '../components/cards/DailyCard'
-import CardImage from '../components/cards/CardImage'
+import TouchableTextBanner from '../components/banners/TouchableTextBanner'
 
 export default class ProfileScreen extends React.Component {
     constructor(props) {
@@ -36,7 +35,12 @@ export default class ProfileScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <CardImage />
+                <TouchableTextBanner
+                    title={'teste'} 
+                    image={{uri:'http://s2.glbimg.com/yrN1DERqw8zxT9jsfTIpPPp3s4g=/s.glbimg.com/jo/g1/f/original/2015/01/04/1.jpg'}} 
+                    message={'testando menasgem'}
+                    onPress={this.handleClick}
+                />
             </View>
         )
     }
@@ -51,10 +55,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
         marginLeft: 5,
-        marginRight: 5
+        marginRight: 5,
     },
-    card: {
-        width: '33.33%',
-        padding: 10
-    }
 })
