@@ -1,8 +1,8 @@
 import React from 'react'
 import { StyleSheet, Alert, Text, View } from 'react-native'
-import CardComunicado from '../components/CardComunicado'
+import NewsContainer from '../containers/NewsContainer'
 
-export default class Home extends React.Component {
+export default class ProfileScreen extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -13,6 +13,7 @@ export default class Home extends React.Component {
     componentDidMount() {
 
     }
+    
     handleClick = () => {
         console.log('dsadsdsdas')
         Alert.alert(
@@ -34,7 +35,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <CardComunicado />
+                <NewsContainer />
             </View>
         )
     }

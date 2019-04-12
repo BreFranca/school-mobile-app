@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheet, View, TouchableOpacity, ImageBackground, Text } from 'react-native'
 
-export default class CardComunicado extends React.Component {
+class CardComunicado extends React.Component {
     render() {
         return (
             <TouchableOpacity onPress={this.props.onPress} style={styles.container}>
@@ -62,3 +62,6 @@ const styles = StyleSheet.create({
         fontWeight: "500",
     }
 })
+
+
+export default CardComunicado

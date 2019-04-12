@@ -1,11 +1,11 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Home from './containers/Home';
+import HomeScreen from './screens/HomeScreen';
+import ProfileScreen from './screens/ProfileScreen'
 
-export default class App extends React.Component {
-	render() {
-		return (
-			<Home />
-		)
-	}
-}
+import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
+
+const TabNavigator = createBottomTabNavigator({
+	Home: HomeScreen,
+	Profile: ProfileScreen
+});
+  
+export default createAppContainer(TabNavigator);
