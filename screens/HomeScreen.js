@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Alert, Text, View } from 'react-native'
-import CardComunicado from '../components/CardComunicado'
+import TouchableCardImageText from '../components/cards/TouchableCardImageText';
 
 export default class HomeScreen extends React.Component {
     constructor(props) {
@@ -34,7 +34,7 @@ export default class HomeScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <CardComunicado />
+                <TouchableCardImageText onPress={this.handleClick} />
             </View>
         )
     }

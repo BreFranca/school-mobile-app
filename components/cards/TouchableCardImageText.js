@@ -2,31 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheet, View, TouchableOpacity, ImageBackground, Text } from 'react-native'
 
-class CardComunicado extends React.Component {
-    render() {
-        return (
-            <TouchableOpacity onPress={this.props.onPress} style={styles.container}>
-                <ImageBackground
-                    source={{ uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png' }}
-                    style={styles.image}
-                >
-                </ImageBackground>
-                <Text style={styles.title}>{this.props.title}</Text>
-                <Text style={styles.excerpt}>{this.props.excerpt}</Text>
-            </TouchableOpacity>
-        )
-    }
-}
+const TouchableCardImageText = (props) => (
+        <TouchableOpacity onPress={props.onPress} style={styles.container}>
+            <ImageBackground
+                source={{ uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png' }}
+                style={styles.image}
+            >
+            </ImageBackground>
+            <Text style={styles.title}>{props.title}</Text>
+            <Text style={styles.excerpt}>{props.excerpt}</Text>
+        </TouchableOpacity>
+)
 
-// You can declare that a prop is a specific JS type. 
-CardComunicado.propTypes = {
+TouchableCardImageText.propTypes = {
     text: PropTypes.string,
     content: PropTypes.array,
     onPress: PropTypes.func,
 }
 
-// Default values for props
-CardComunicado.defaultProps = {
+TouchableCardImageText.defaultProps = {
     text: 'Botão de testes',
     onPress: () => { },
     color: '#000000',
@@ -63,5 +57,4 @@ const styles = StyleSheet.create({
     }
 })
 
-
-export default CardComunicado
+export default TouchableCardImageText
