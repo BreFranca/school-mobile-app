@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Alert, Text, View } from 'react-native'
-import CardHome from '../components/CardHome'
+import CardComunicado from '../components/CardComunicado'
 
 export default class Home extends React.Component {
     constructor(props) {
@@ -34,33 +34,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <View style={styles.card}>
-                    <CardHome onPress={this.handleClick} />
-                </View>
-                <View style={styles.card}>
-                    <CardHome onPress={this.handleClick} />
-                </View>
-                <View style={styles.card}>
-                    <CardHome onPress={this.handleClick} />
-                </View>
-                <View style={styles.card}>
-                    <CardHome onPress={this.handleClick} />
-                </View>
-                <View style={styles.card}>
-                    <CardHome onPress={this.handleClick} />
-                </View>
-                <View style={styles.card}>
-                    <CardHome onPress={this.handleClick} />
-                </View>
-                <View style={styles.card}>
-                    <CardHome onPress={this.handleClick} />
-                </View>
-                <View style={styles.card}>
-                    <CardHome onPress={this.handleClick} />
-                </View>
-                <View style={styles.card}>
-                    <CardHome onPress={this.handleClick} />
-                </View>
+                <CardComunicado />
             </View>
         )
     }
