@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, Alert, Text, View } from 'react-native'
-import CardComunicado from '../components/CardComunicado'
+import DailyCard from '../components/cards/DailyCard'
+import CardImage from '../components/cards/CardImage'
 
 export default class Home extends React.Component {
     constructor(props) {
@@ -34,7 +35,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <CardComunicado />
+                <CardImage />
             </View>
         )
     }

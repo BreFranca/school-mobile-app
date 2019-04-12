@@ -1,6 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Home from './containers/Home';
+import Home from './screens/HomeScreen';
 
 export default class App extends React.Component {
 	render() {
