@@ -45,8 +45,8 @@ const style = StyleSheet.create({
     },
     content: {
         borderRadius: 3,
-        paddingVertical: 20,
-        paddingHorizontal: 30,
+        paddingVertical: 13,
+        paddingHorizontal: 20,
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'flex-start',
@@ -58,7 +58,8 @@ const style = StyleSheet.create({
     },
     title: {
         fontSize: 11,
-        color: '#FFFFFF'
+        color: '#FFFFFF',
+        fontWeight: '500',
     },
     messageText: {
         fontSize: 11,
